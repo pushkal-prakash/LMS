@@ -1,0 +1,115 @@
+<html>
+<head>
+<script language="javascript">
+function validate()
+{
+var doc=document.form1;
+if(doc.userid.value=="")
+{
+window.alert("enter userid");
+doc.userid.focus();
+return false;
+}
+if(doc.password.value=="")
+{
+window.alert("enter password");
+doc.password.focus();
+return false;
+}
+}
+
+</script>
+<title>Website Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<style type="text/css">
+<!--
+.style4 {color: #0000FF}
+.style5 {color: #0033FF}
+.style6 {font-family: Georgia, "Times New Roman", Times, serif}
+.style7 {
+	font-size: 40px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFF66;
+}
+.style8 {font-size: 35px}
+.style9 {
+	font-size: 32px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #CCFF66;
+}
+.style11 {
+	color: #FF0000;
+	font-size: 15px;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#EEEEEE" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table width="770" height="202" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="150" bgcolor="#009999" class="logo style6" style="padding-left:25px"><div align="center" class="style7">
+      <div align="left"><span class="style8"><img src="images/evms_learning_management.jpg" width="100" height="100"><span class="style9">COLLEGE INTERACTO </span></span></div>
+    </div></td>
+  </tr>
+  
+  <tr> 
+    <td height="23" align="center" background="images/top01.gif" bgcolor="#666666" class="menu"></td>
+  </tr>
+</table>
+<table width="769" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="368" valign="top" bgcolor="#FFFFFF">
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr> 
+          <td class="title" height="60" background="images/title_bg.gif" align="right"><div align="center" class="style5">User Login </div></td>
+        </tr>
+        <tr> 
+          <td valign="top" class="text"> 
+            <p><form name="form1" method="post" action="getlogininfo" onSubmit="return validate()">
+              <p></p>
+  <table width="338" height="272" border="0" align="center" bordercolor="#999999">
+    <tr>
+      <td width="155" height="63" class="style4">User ID </td>
+      <td width="173"><input name="userid" type="text" id="userid"></td>
+    </tr>
+    <tr>
+      <td height="71" align="center"><div align="left" class="style4">Password</div></td>
+      <td><input name="password" type="password" id="password"></td>
+    </tr>
+	<%String fail=(String)session.getAttribute("fail");
+				  if(fail.equals("0"))
+				  {%><tr>
+	  <td height="59" colspan="2"><span class="style11">Invalid User id and Password. Try again!!!</span></td>
+					</tr><%}%>
+    <tr>
+      <td height="69" align="center"><input type="submit" name="Submit" value="Submit"></td>
+      <td align="center"><input type="reset" name="Reset" value="Reset"></td>
+    </tr>
+  </table>
+  
+            </form>
+</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="401" bgcolor="#E5E5E5" valign="top"><p><br>
+    </p>
+      <p>&nbsp;</p>
+      <p><img src="images/i.JPG" width="402" height="263">      </p>
+      <p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+<table width="770" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td><img src="images/bottom_01.gif" width="770" height="6"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#E5E5E5" height="40" align="center"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#999999">Copyright &copy; 2009 NSIC. All rights reserved. Designed by V.Udayabala</font></td>
+  </tr>
+</table>
+</body>
+</html>

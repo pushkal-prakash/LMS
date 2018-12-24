@@ -1,0 +1,349 @@
+<web-app>
+<!-- MIME mapping -->
+        <mime-mapping>
+                <extension>doc</extension>
+                <mime-type>application/vnd.ms-word</mime-type>
+        </mime-mapping>
+		<mime-mapping>
+			<extension>pps</extension>
+			<mime-type>application/vnd.ms-powerpoint</mime-type>
+		</mime-mapping>
+		<mime-mapping>
+			 <extension>ppt</extension>
+		     <mime-type>application/powerpoint</mime-type>
+			 <mime-type>application/vnd.ms-powerpoint</mime-type>
+		 </mime-mapping>
+
+<servlet>
+		<servlet-name>DepartmentRegistration</servlet-name>
+		<servlet-class>DepartmentRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DepartmentRegistration</servlet-name>
+		<url-pattern>/departmentregistration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DesignationRegistration</servlet-name>
+		<servlet-class>DesignationRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DesignationRegistration</servlet-name>
+		<url-pattern>/designationregistration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QualificationRegistration</servlet-name>
+		<servlet-class>QualificationRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>QualificationRegistration</servlet-name>
+		<url-pattern>/qualificationregistration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetDepartments</servlet-name>
+		<servlet-class>GetDepartments</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetDepartments</servlet-name>
+		<url-pattern>/getdepartments</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SubjectRegistration</servlet-name>
+		<servlet-class>SubjectRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubjectRegistration</servlet-name>
+		<url-pattern>/subjectregistration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetSubjects</servlet-name>
+		<servlet-class>GetSubjects</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetSubjects</servlet-name>
+		<url-pattern>/getsubjects</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>SubtopicRegistration</servlet-name>
+		<servlet-class>SubtopicRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubtopicRegistration</servlet-name>
+		<url-pattern>/subtopicregistration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserRegistration</servlet-name>
+		<servlet-class>UserRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserRegistration</servlet-name>
+		<url-pattern>/userregistration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetInfo</servlet-name>
+		<servlet-class>GetInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetInfo</servlet-name>
+		<url-pattern>/getinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetLoginInfo</servlet-name>
+		<servlet-class>GetLoginInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetLoginInfo</servlet-name>
+		<url-pattern>/getlogininfo</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>InvalidateSession</servlet-name>
+		<servlet-class>InvalidateSession</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InvalidateSession</servlet-name>
+		<url-pattern>/invalidatesession</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>GetContentSubTopic</servlet-name>
+		<servlet-class>GetContentSubTopic</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetContentSubTopic</servlet-name>
+		<url-pattern>/getcontentsubtopic</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetContentSubjects</servlet-name>
+		<servlet-class>GetContentSubjects</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetContentSubjects</servlet-name>
+		<url-pattern>/getcontentsubjects</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetContentInfo</servlet-name>
+		<servlet-class>GetContentInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetContentInfo</servlet-name>
+		<url-pattern>/getcontentinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FileUpload</servlet-name>
+		<servlet-class>FileUpload</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FileUpload</servlet-name>
+		<url-pattern>/fileupload</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>DeleteContent</servlet-name>
+		<servlet-class>DeleteContent</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteContent</servlet-name>
+		<url-pattern>/deletecontent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetForumSubjects</servlet-name>
+		<servlet-class>GetForumSubjects</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetForumSubjects</servlet-name>
+		<url-pattern>/getforumsubjects</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetStudentForumSubTopic</servlet-name>
+		<servlet-class>GetStudentForumSubTopic</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetStudentForumSubTopic</servlet-name>
+		<url-pattern>/getstudentforumsubtopic</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetStudentForum</servlet-name>
+		<servlet-class>GetStudentForum</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetStudentForum</servlet-name>
+		<url-pattern>/getstudentforum</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetTestSubjects</servlet-name>
+		<servlet-class>GetTestSubjects</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetTestSubjects</servlet-name>
+		<url-pattern>/gettestsubjects</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetSubTopic</servlet-name>
+		<servlet-class>GetSubTopic</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetSubTopic</servlet-name>
+		<url-pattern>/getsubtopic</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QuestionsRegistration</servlet-name>
+		<servlet-class>QuestionsRegistration</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>QuestionsRegistration</servlet-name>
+		<url-pattern>/questionsregistration</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>GetStudentTestSubjects</servlet-name>
+		<servlet-class>GetStudentTestSubjects</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetStudentTestSubjects</servlet-name>
+		<url-pattern>/getstudenttestsubjects</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>GetStudentTestSubTopic</servlet-name>
+		<servlet-class>GetStudentTestSubTopic</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetStudentTestSubTopic</servlet-name>
+		<url-pattern>/getstudenttestsubtopic</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetStudentTestInfo</servlet-name>
+		<servlet-class>GetStudentTestInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetStudentTestInfo</servlet-name>
+		<url-pattern>/getstudenttestinfo</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+		<servlet-name>ChangePassword</servlet-name>
+		<servlet-class>ChangePassword</servlet-class>
+</servlet>
+
+<servlet-mapping>
+		<servlet-name>ChangePassword</servlet-name>
+		<url-pattern>/changepassword</url-pattern>
+</servlet-mapping>
+<servlet>
+		<servlet-name>TestEvaluation</servlet-name>
+		<servlet-class>TestEvaluation</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TestEvaluation</servlet-name>
+		<url-pattern>/testevaluation</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>GetThreadInfo</servlet-name>
+		<servlet-class>GetThreadInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetThreadInfo</servlet-name>
+		<url-pattern>/getthreadinfo</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>DeleteTopic</servlet-name>
+		<servlet-class>DeleteTopic</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteTopic</servlet-name>
+		<url-pattern>/deletetopic</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReplyQuery</servlet-name>
+		<servlet-class>ReplyQuery</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ReplyQuery</servlet-name>
+		<url-pattern>/replyquery</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>Forum</servlet-name>
+		<servlet-class>Forum</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Forum</servlet-name>
+		<url-pattern>/forum</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+		<servlet-name>ViewReply</servlet-name>
+		<servlet-class>ViewReply</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewReply</servlet-name>
+		<url-pattern>/viewreply</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>GetReplyInfo</servlet-name>
+		<servlet-class>GetReplyInfo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetReplyInfo</servlet-name>
+		<url-pattern>/getreplyinfo</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		</welcome-file-list>
+	
+	</web-app>

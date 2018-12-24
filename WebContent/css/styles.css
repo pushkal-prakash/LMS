@@ -1,0 +1,13 @@
+a:link {  color: #FF6600; text-decoration: underline}
+a:visited {  color: #FF6600; text-decoration: underline}
+a:hover {  color: #333333; text-decoration: underline}
+a.designby:link {  color: #999999; text-decoration: none}
+a.designby:visited {  color: #999999; text-decoration: none}
+a.designby:hover {  color: #333333; text-decoration: underline}
+a.menu:link {  color: #FAE3C1; text-decoration: underline}
+a.menu:visited {  color: #FAE3C1; text-decoration: underline}
+a.menu:hover {  color: #FFFFFF; text-decoration: none}
+.logo {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 30px; font-weight: bold; color: #FAE3C1}
+.menu {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #FAE3C1}
+.text {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666666}
+.title {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #FF9900}

@@ -1,0 +1,110 @@
+<html>
+<head>
+<script language="javascript">
+function validate()
+{
+var doc=document.form1;
+if(doc.department.value=="")
+{
+window.alert("enter departmentname");
+doc.department.focus();
+return false;
+}
+}
+
+</script>
+<title>Website Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.style4 {color: #0000FF}
+.style5 {color: #0033FF}
+.style6 {font-family: Georgia, "Times New Roman", Times, serif}
+.style7 {
+	font-size: 40px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFF66;
+}
+.style8 {
+	font-size: 32px;
+	color: #CCFF66;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style9 {color: #CCFF66}
+-->
+</style>
+</head>
+
+<body bgcolor="#EEEEEE" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table width="770" height="202" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="150" bgcolor="#009999" class="logo style6" style="padding-left:25px"><div align="center" class="style7">
+      <div align="left"><img src="images/evms_learning_management.jpg" width="100" height="100"><span class="style8">COLLEGE INTERACTO </span></div>
+    </div></td>
+  </tr>
+   <tr> 
+    <td height="27" align="center" background="images/top01.gif" bgcolor="#99FF99" class="menu"> <div align="left"><span class="style9">Welcome, </span>        
+      <%String userid=(String)session.getAttribute("userid");%>
+     <%=userid%> </div></td>
+  </tr>
+  <tr> 
+    <td height="23" align="center" background="images/top01.gif" bgcolor="#666666" class="menu"><div align="left"><span class="style1"><a href="#" class="menu">Home</a> 
+      - <a href="getinfo" class="menu">User</a> 
+      - <a href="department.html" class="menu">Department</a> - <a href="designation.html" class="menu">Designation</a> - <a href="qualification.html" class="menu">Qualification</a> 
+      - <a href="getdepartments" class="menu">Subject</a> - <a href="getsubjects" class="menu">Subtopic 
+</a> - <a href="invalidatesession" class="menu">Sign out</a></span></div></td>
+  </tr>
+</table>
+<table width="770" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="487" valign="top" bgcolor="#FFFFFF">
+      <table width="83%" border="0" cellspacing="0" cellpadding="15">
+        <tr> 
+          <td class="title" height="60" background="images/title_bg.gif" align="right"><div align="center" class="style5">User Login </div></td>
+        </tr>
+        <tr> 
+          <td valign="top" class="text"> 
+            <p><form name="form1" method="post" action="getlogininfo" onSubmit="return validate()">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="338" height="146" border="2" align="center" bordercolor="#0000FF">
+    <tr>
+      <td width="155" height="63"><span class="style4">User ID </span></td>
+      <td width="173"><input name="userid" type="text" id="userid"></td>
+    </tr>
+    <tr>
+      <td height="44" align="center"><div align="left" class="style4">Password</div></td>
+      <td><input name="password" type="password" id="password"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="submit" name="Submit" value="Submit"></td>
+      <td align="center"><input type="reset" name="Reset" value="Reset"></td>
+    </tr>
+  </table>
+</form>
+</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="283" bgcolor="#E5E5E5" valign="top"><img src="images/top02.gif" width="191" height="87"><br>
+    <img src="images/students%20LC.jpg" width="412" height="320">    </td>
+  </tr>
+</table>
+<table width="770" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td><img src="../../../../../Documents%20and%20Settings/AP%20ZONE/Desktop/templates/template002/images/bottom_01.gif" width="770" height="6"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#E5E5E5" height="40" align="center"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#999999">Copyright &copy; 2009 NSIC. All rights reserved. Designed by V.Udayabala</font></td>
+  </tr>
+</table>
+</body>
+</html>
